@@ -56,7 +56,7 @@ class Menu {
           
             echo "END Dear $name, you have successfully registered.Initial balance Account is:".Util::$user_balance."Rwf";
             } else {
-                echo "END Registration failed. Please try again.";
+                echo "END Registration failed. Please try again!";
             }
         } else {
             echo "END Invalid input. Please try again.";
@@ -96,13 +96,9 @@ class Menu {
     }
    }
 
-
-    
-
     public function mainMenuRegistered() {
         echo "CON Welcome back to XYZ MOMO\n1. Send Money\n2. Withdraw Money\n3. Check Balance\n4. Deposit Money\n0. Exit";
     }
-
     public function menuSendMoney($textArray) {
         $level = count($textArray);
 
@@ -207,8 +203,6 @@ elseif($level== 5 && $textArray[4]==2){
             echo"Invalid Option";
         }
     }
-
-
 
     public function menuCheckBalance($textArray) {
         $level = count($textArray);
