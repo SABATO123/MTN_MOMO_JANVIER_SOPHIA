@@ -12,7 +12,7 @@ try {
     $phoneNumber = $_POST["phoneNumber"];
     $text        = $_POST["text"];
 
-    // Middleware
+    
     $menu = new Menu($text, $sessionId, $phoneNumber, $conn);
 
     $text = $menu->middleWare($text);
