@@ -40,7 +40,7 @@ class Menu {
                 return;
             }
     
-            // Check if phone is already registered
+            
             $stmt = $this->conn->prepare("SELECT * FROM users WHERE phone_number = ?");
             $stmt->execute([$this->phoneNumber]);
             if ($stmt->rowCount() > 0) {
