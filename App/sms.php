@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use AfricasTalking\SDK\AfricasTalking;
-
 class Sms {
     private $sms;
 
@@ -15,7 +14,6 @@ class Sms {
 
     public function sendSMS($message, $recipients) {
         $from = "MyMoney ltd";
-
         try {
             $result = $this->sms->send([
                 'to'      => $recipients,
