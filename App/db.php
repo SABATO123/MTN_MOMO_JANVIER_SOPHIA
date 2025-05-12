@@ -10,7 +10,6 @@ try {
         PDO::ATTR_PERSISTENT => true
     ]);
 } catch (PDOException $e) {
-    
     die("Connection failed: " . $e->getMessage());
 }
 ?>
